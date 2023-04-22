@@ -1,8 +1,8 @@
 import {React, useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 
-import VideoCard from "../../Component/VideoCard";
-import AdvertisementCard from "../../Component/AdvertisementCard";
+import VideoCard,{AdvertisementCard} from "../../Component/VideoCard";
+//import AdvertisementCard from "../../Component/AdvertisementCard";
 
 const VideoContainer = () => {
 
@@ -18,8 +18,11 @@ const VideoContainer = () => {
         setVideo(jsonData?.items);
     }
 
+    if(!videos) return null;
+
     return (
         <div className="grid grid-cols-3 gap-1">
+            <AdvertisementCard info={videos[0]} />
             {videos.map((data,index) => {
                 return (
                     <Link to={`/watch?v=${data?.id}`} key={index} >
@@ -31,5 +34,7 @@ const VideoContainer = () => {
         </div>
     );
 }
+
+
 
 export default VideoContainer;
