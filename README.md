@@ -54,7 +54,7 @@ https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2
 
 //.env
 
-REACT_APP_API_KEY=AIzaSyB-bMtFf8Pm8U4W4_oSooV5Vrr6gVNT0cM
+REACT_APP_API_KEY=
 
 #API URI
 REACT_APP_FETCH_POPULAR_VIDEO_DATA_API_URL=https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&maxResults=50&key=

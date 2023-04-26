@@ -26,7 +26,7 @@ const Header = () => {
                             </Link>
                         </div>
                     <SearchBar/>
-                    <Button cName="rounded border-2 border-zinc-300 w-24 h-10 rounded-full ml-96 mt-1.5"><i className="fa-regular fa-user"></i> Sign in </Button>
+                    <Button cName="rounded border-2 border-zinc-300 w-24 h-10 rounded-full ml-96 xl:ml-[21.6rem] mt-1.5"><i className="fa-regular fa-user"></i> Sign in </Button>
                 </div>
             </nav>
         </header>

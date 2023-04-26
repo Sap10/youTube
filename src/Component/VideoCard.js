@@ -21,7 +21,7 @@ const VideoCard = ({info}) => {
 
     return (
 
-            <div className="w-96 p-2 mx-auto">
+            <div className="w-96 p-2 mx-auto xl:w-[22rem]">
                 <img
                     src={info?.snippet?.thumbnails?.medium?.url}
                     className="h-52 rounded-lg" />

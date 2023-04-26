@@ -18,7 +18,7 @@ const VideoContainer = () => {
         setVideo(jsonData?.items);
     }
 
-    if(!videos) return null;
+    if(!videos[0]) return null;
 
     return (
         <div className="grid grid-cols-3 gap-1">
